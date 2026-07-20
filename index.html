@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sona Manakova — Process Portfolio</title>
+<title>Sona Manakova · Process Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -16,7 +16,6 @@
   ::-webkit-scrollbar-track{background:transparent;}
   ::-webkit-scrollbar-thumb{background:#cdcbc1;border-radius:6px;}
   @keyframes cardIn{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
-  @keyframes hereGlow{0%,100%{box-shadow:0 0 0 0 rgba(61,74,222,0);}50%{box-shadow:0 0 0 5px rgba(61,74,222,.14);}}
   @keyframes ringPulse{0%{transform:scale(1);opacity:.65;}100%{transform:scale(2.6);opacity:0;}}
   @keyframes revealFade{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
 
@@ -71,7 +70,6 @@
 
   .pos-stream article{min-height:58vh;padding-bottom:9vh;scroll-margin-top:calc(var(--bar-h) + 66px);}
   .pos-stream .tag{display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#a9a79c;margin-bottom:10px;}
-  .pos-stream .cat{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
   .pos-stream h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(21px,3.2vw,28px);line-height:1.16;letter-spacing:-.02em;margin:0 0 18px;max-width:22ch;}
   .pos-stream p.problem{max-width:60ch;margin:0 0 20px;font-size:14.5px;line-height:1.62;color:#6B6B73;}
   .pos-stream .result{border-left:2px solid var(--decision);padding:2px 0 2px 20px;margin:0 0 22px;max-width:56ch;font-style:italic;font-size:clamp(15px,2.2vw,17.5px);line-height:1.5;color:#17171C;}
@@ -99,7 +97,6 @@
   </div>
 
   <div id="minimap-dock"></div>
-  <div id="map-overlay-root"></div>
 </div>
 
 <script>
@@ -132,33 +129,34 @@
       title:'Head of Customer Contract Management, Benelux',
       oneLine:'I lead a team of 10 running sales operations for international B2B accounts.',
       projects:[
-        { cat:'Team strategy', title:'Team strategy', problem:'The team was consumed by order intake, quoting instructions and firefighting, with little room for the work that actually creates value.', result:'Set a clear goal to strengthen strategic impact based on three things: enabling supporting teams to work autonomously, owning the health of the process and being a genuine strategic partner to the account team and the customer. Impact: Energy shifted from busy execution to work that creates real value.', tools:['Strategy','Facilitation','Coaching'] },
-        { cat:'Governance', title:'RACI operating model', problem:'Roles and expectations between the contract managers and their operational support were unclear, which created friction, ownership wasn\'t clear and heavy dependence on individuals.', result:'Defined a clear way of working: who owns what, how issues escalate, and where each role adds value. Supporting teams got autonomy for everyday work, freeing the team to focus on improvement and strategic topics. Impact: clear roles and expectations, less friction, and a foundation that scales without relying on single people.', tools:['RACI','Change mgmt'] },
-        { cat:'Change leadership', title:'Leading outsourcing transition', problem:'Team was being transferred to an external outsourcing partner, with real risk to continuity, morale and client relationships.', result:'Designed and facilitated a 15-person leadership workshop aligning everyone on what a good transition looks like. In parallel, managed coverage, knowledge risks and built continuity plans. Impact: a leadership team aligned on definition of success and how to reach it, zero disruption for the customer.', tools:['Workshop design','Continuity planning'] },
-        { cat:'Automation', title:'Process improvements', problem:'Customers used to send their requests by email, which then had to be handled and re-entered manually across our systems.', result:'Drove the rollout of a digital platform where customers submit requests directly — the request flows automatically into our tools, the workflow is digitalized and automated, and customers can track progress themselves. I also introduced automation on specific accounts. Impact: a faster, more transparent process with far less manual, error-prone work — and real visibility for customers.', tools:['Digital platform','Workflow automation'] }
+        { title:'Team strategy', problem:'The team was consumed by order intake, quoting instructions and firefighting, with little room for the work that actually creates value.', result:'Set a clear goal to strengthen strategic impact based on three things: enabling supporting teams to work autonomously, owning the health of the process and being a genuine strategic partner to the account team and the customer. Impact: Energy shifted from busy execution to work that creates real value.', tools:['Strategy','Facilitation','Coaching'] },
+        { title:'RACI operating model', problem:'Roles and expectations between the contract managers and their operational support were unclear, which created friction, ownership wasn\'t clear and heavy dependence on individuals.', result:'Defined a clear way of working: who owns what, how issues escalate, and where each role adds value. Supporting teams got autonomy for everyday work, freeing the team to focus on improvement and strategic topics. Impact: clear roles and expectations, less friction, and a foundation that scales without relying on single people.', tools:['RACI','Change mgmt'] },
+        { title:'Leading outsourcing transition', problem:'Team was being transferred to an external outsourcing partner, with real risk to continuity, morale and client relationships.', result:'Designed and facilitated a 15-person leadership workshop aligning everyone on what a good transition looks like. In parallel, managed coverage, knowledge risks and built continuity plans. Impact: a leadership team aligned on definition of success and how to reach it, zero disruption for the customer.', tools:['Workshop design','Continuity planning'] },
+        { title:'Process improvements', problem:'Customers used to send their requests by email, which then had to be handled and re-entered manually across our systems.', result:'Drove the rollout of a digital platform where customers submit requests directly: the request flows automatically into our tools, the workflow is digitalized and automated, and customers can track progress themselves. Impact: a faster, more transparent process with far less manual, error-prone work, and real visibility for customers.', tools:['Digital platform','Workflow automation'] }
       ] },
     { num:'02', rotation:true, company:'Orange Business', country:'Malaysia', years:'2024 – 2025',
       title:'Continuous Improvement Specialist',
       oneLine:'I looked for inefficiencies in service delivery and operations, designed solutions and made sure they were actually adopted.',
       projects:[
-        { cat:'Applied AI', title:'AI summarization of order history', problem:'PMs and decision-makers worked through long order histories and comment threads just to understand what was going on. Slow, inconsistent, a regular source of escalations.', result:'Identified the opportunity and built an automation solution that uses AI to process long order histories and provided quick order summaries, a timeline, the latest changes, and root-cause analysis of any issue. Results: Faster answers, less digging, everyone working from the same picture.', tools:['Generative AI','Prompt design','RPA'] },
-        { cat:'Predictive ops', title:'From firefighting to prevention', problem:'The team reacted to escalations only once they\'d happened — stressful and expensive to fix.', result:'Built risk-scoring logic for open orders, a way to flag the risky ones, and a clear process for what to do when something went red. Results: Moved from firefighting towards prevention. The team can see risk coming and act earlier.', tools:['Power BI','Risk management','Process design'] },
-        { cat:'Lean Six Sigma', title:'Delivery team productivity', problem:'Productivity wasn\'t reaching the global target or peer-region benchmark.', result:'Applied DMAIC — problem statement and goal, root-cause analysis, validated hypotheses, scenario projections, improvement suggestions, implementation and measurement. Productivity target hit within six months.', tools:['DMAIC','Root-cause analysis'] },
-        { cat:'Quality', title:'Quality at scale', problem:'Incorrect orders caused delivery delays, delayed revenue and customer dissatisfaction.', result:'Set up qualitative parameters and proper monitoring, with analysis of what was causing the issues. Results: Targeted improvement actions addressing the main drivers of errors.', tools:['Quality monitoring','Process design'] }
+        { title:'AI summarization of order history', problem:'PMs and decision-makers worked through long order histories and comment threads just to understand what was going on. Slow, inconsistent, a regular source of escalations.', result:'Identified the opportunity and built an automation solution that uses AI to process long order histories and provided quick order summaries, a timeline, the latest changes, and root-cause analysis of any issue. Results: Faster answers, less digging, everyone working from the same picture.', tools:['Generative AI','Prompt design','RPA'] },
+        { title:'From firefighting to prevention', problem:'The team reacted to escalations only once they\'d happened: stressful and expensive to fix.', result:'Built risk-scoring logic for open orders, a way to flag the risky ones, and a clear process for what to do when something went red. Results: Moved from firefighting towards prevention. The team can see risk coming and act earlier.', tools:['Power BI','Risk management','Process design'] },
+        { title:'Delivery team productivity', problem:'Productivity wasn\'t reaching the global target or peer-region benchmark.', result:'Applied DMAIC: problem statement and goal, root-cause analysis, validated hypotheses, scenario projections, improvement suggestions, implementation and measurement. Productivity target hit within six months.', tools:['DMAIC','Root-cause analysis'] },
+        { title:'Quality at scale', problem:'Incorrect orders caused delivery delays, delayed revenue and customer dissatisfaction.', result:'Set up qualitative parameters and proper monitoring, with analysis of what was causing the issues. Results: Targeted improvement actions addressing the main drivers of errors.', tools:['Quality monitoring','Process design'] },
+        { title:'Team upskilling strategy', problem:'No clear view of team skills versus the services offered across APAC; training wasn\'t aligned to business needs.', result:'Mapped where people actually were, identified gaps against targets, and set out an upskilling strategy. Impact: a clearer direction for developing people, and a team better prepared to deliver.', tools:['Skills mapping','L&D strategy'] }
       ] },
     { num:'03', rotation:false, company:'Orange', country:'Slovakia', years:'2023 – 2024',
       title:'Digital Web & Media Analyst',
       oneLine:'I analyzed customer digital journeys and built the analytics and dashboards behind them, turning what I found into experiments that lifted online conversion.',
       projects:[
-        { cat:'Data trust', title:'Metrics hub', problem:'Metrics were used across dashboards but defined inconsistently. People avoided the dashboards because they didn\'t know how the numbers were calculated. No trust, no consistent interpretation.', result:'Built central metrics documentation that unified definitions across dashboards. A more data-driven culture and reliable data. Analysts could reuse definitions instead of redefining each time, and trust in reporting improved.', tools:['GA4','GTM','Looker Studio'] },
-        { cat:'Conversion', title:'Conversion drop-off analysis', problem:'Customers were dropping out along key journeys on the website, but it wasn\'t clear where or why — so improvement efforts were spread thin instead of aimed at what mattered.', result:'Prioritized the customer journeys by their contribution to sales, mapped the drop-off points, and turned those findings into concrete experiments to move more customers through each step. Impact: improvement work focused where it paid off, with experiments designed to lift online conversion.', tools:['Journey analysis','Experimentation','CRO'] }
+        { title:'Metrics hub', problem:'Metrics were used across dashboards but defined inconsistently. People avoided the dashboards because they didn\'t know how the numbers were calculated. No trust, no consistent interpretation.', result:'Built central metrics documentation that unified definitions across dashboards. A more data-driven culture and reliable data. Analysts could reuse definitions instead of redefining each time, and trust in reporting improved.', tools:['GA4','GTM','Looker Studio'] },
+        { title:'Conversion drop-off analysis', problem:'Customers were dropping out along key journeys on the website, but it wasn\'t clear where or why, so improvement efforts were spread thin instead of aimed at what mattered.', result:'Prioritized the customer journeys by their contribution to sales, mapped the drop-off points, and turned those findings into concrete experiments to move more customers through each step. Impact: improvement work focused where it paid off, with experiments designed to lift online conversion.', tools:['Journey analysis','Experimentation','CRO'] }
       ] },
     { num:'04', rotation:false, company:'Orange', country:'Slovakia', years:'2020 – 2023',
       title:'Digital Marketing Specialist',
       oneLine:'I led projects to improve digital customer experience and ran the internal email marketing team.',
       projects:[
-        { cat:'Lead generation', title:'Lead generation from scratch', problem:'There was no way for non-customers to subscribe to Orange news — the website had no channel to capture people interested in the brand, so a whole audience was slipping away.', result:'Built the lead-generation flow end to end: a contact database, a sign-up pop-up, onboarding and campaign email templates, and the opt-out logic behind it. Impact: a new owned channel to collect and nurture leads, and a repeatable way to keep them engaged.', tools:['Email marketing','CRM','Campaign design'] },
-        { cat:'Email design', title:'Email template redesign', problem:'After two years, our email template no longer met current design standards — it looked dated and didn\'t cover the use cases we actually needed.', result:'Led the redesign end to end: collecting template examples and best practices, mapping the problems with the existing one, defining new use cases, then running several rounds of feedback to align multiple stakeholders before we coded and rolled out the new template. Impact: a modern, on-standard template that fit real campaign needs and became the new default for the team.', tools:['Email marketing','Stakeholder alignment','Project ownership'] }
+        { title:'Lead generation from scratch', problem:'There was no way for non-customers to subscribe to Orange news, the website had no channel to capture people interested in the brand, so a whole audience was slipping away.', result:'Built the lead-generation flow end to end: a contact database, a sign-up pop-up, onboarding and campaign email templates, and the opt-out logic behind it. Impact: a new owned channel to collect and nurture leads, and a repeatable way to keep them engaged.', tools:['Email marketing','CRM','Campaign design'] },
+        { title:'Email template redesign', problem:'After two years, our email template no longer met current design standards: it looked dated and didn\'t cover the use cases we actually needed.', result:'Led the redesign end to end: collecting template examples and best practices, mapping the problems with the existing one, defining new use cases, then running several rounds of feedback to align multiple stakeholders before we coded and rolled out the new template. Impact: a modern, on-standard template that fit real campaign needs and became the new default for the team.', tools:['Email marketing','Stakeholder alignment','Project ownership'] }
       ] }
   ];
 
@@ -167,7 +165,6 @@
     current: 'landing',
     timer: 30,
     timing: false,
-    mapOpen: false,
     wide: window.innerWidth >= 1080
   };
 
@@ -183,10 +180,6 @@
   function connector(){
     return '<div style="display:flex;justify-content:center;padding:5px 0;"><div style="width:2px;height:52px;background:#D3D1C6;"></div></div>';
   }
-  function hereBadge(color){
-    return '<span style="position:absolute;top:16px;right:18px;font-family:\'IBM Plex Mono\',monospace;font-size:10px;letter-spacing:.06em;color:'+color+';display:inline-flex;align-items:center;gap:6px;"><span style="width:7px;height:7px;border-radius:50%;background:'+color+';animation:hereGlow 1.8s ease-in-out infinite;"></span>YOU ARE HERE</span>';
-  }
-
   function frontier(){
     var f = new Set();
     edges.forEach(function(e){ if (state.visited.has(e[0]) && !state.visited.has(e[1])) f.add(e[1]); });
@@ -205,7 +198,6 @@
     if (lastNav && now - lastNav < 90) return;
     lastNav = now;
     if (!isReachable(id)) return;
-    closeMapOverlay();
     state.visited.add(id);
     state.current = id;
     state.timing = false;
@@ -255,13 +247,9 @@
   }
 
   function renderWorkCard(){
-    var isCur = state.current === 'work';
-    var badge = isCur ? hereBadge('var(--accent)') : '';
-
     var introHtml = '<div style="padding:clamp(26px,4.4vw,42px) clamp(15px,4vw,26px) 6vh;">'
       + '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">work</div>'
-      + '<h2 style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:clamp(28px,5vw,40px);letter-spacing:-.02em;margin:0 0 14px;max-width:18ch;">Four positions, one thread.</h2>'
-      + '<p style="margin:0;font-size:15px;line-height:1.6;color:#3a3a44;max-width:56ch;">Newest first. Tap a role, or keep scrolling — the projects follow right after.</p>'
+      + '<h2 style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:clamp(28px,5vw,40px);letter-spacing:-.02em;margin:0;max-width:18ch;">Four positions, one thread.</h2>'
       + '</div>';
 
     var listHtml = '<div style="padding:0 clamp(15px,4vw,26px);border-top:1px solid #E4E2D8;">'
@@ -302,8 +290,7 @@
         + r.projects.map(function(p,j){
             var tools = p.tools.map(function(t){ return '<span>'+t+'</span>'; }).join('');
             return '<article id="wproj-'+i+'-'+j+'" data-project-pos="'+i+'" data-project-idx="'+j+'">'
-              + '<span class="tag">'+r.num+' '+r.title+' — Project '+String(j+1).padStart(2,'0')+'</span>'
-              + '<span class="cat">'+p.cat+'</span>'
+              + '<span class="tag">'+r.num+' '+r.title+' · Project '+String(j+1).padStart(2,'0')+'</span>'
               + '<h3>'+p.title+'</h3>'
               + '<p class="problem">'+p.problem+'</p>'
               + '<p class="result">'+p.result+'</p>'
@@ -321,7 +308,6 @@
       + '</div>';
 
     return '<div id="n-work" style="position:relative;background:#fff;border:1.5px solid #E4E2D8;border-radius:24px;box-shadow:0 6px 26px -16px rgba(20,20,32,.32);'+anim('work')+'">'
-      + badge
       + introHtml + listHtml + pillbarHtml + positionsHtml + ctaHtml
       + '</div>';
   }
@@ -369,7 +355,6 @@
     var html = '';
 
     html += '<div id="n-landing" style="position:relative;background:#fff;border:1.5px solid #E4E2D8;border-radius:24px;padding:clamp(26px,4.4vw,42px);box-shadow:0 6px 26px -16px rgba(20,20,32,.32);'+anim('landing')+'">'
-      + (state.current==='landing' ? hereBadge('var(--accent)') : '')
       + '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">▷ process.start()</div>'
       + '<h1 style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:clamp(34px,7vw,54px);letter-spacing:-.025em;margin:0 0 16px;">Hello.</h1>'
       + '<p style="margin:0 0 26px;font-size:clamp(15px,2.7vw,17px);line-height:1.62;color:#3a3a44;max-width:56ch;text-wrap:pretty;">You\'re about to explore my portfolio. A short walk through where I\'ve worked, what I built there, and what I\'m looking for next.</p>'
@@ -387,7 +372,6 @@
 
     if (v.has('about')) html += '<div>'+connector('var(--accent)')
       + '<div id="n-about" style="position:relative;background:#fff;border:1.5px solid #E4E2D8;border-radius:24px;padding:clamp(26px,4.4vw,42px);box-shadow:0 6px 26px -16px rgba(20,20,32,.32);'+anim('about')+'">'
-      +   (state.current==='about' ? hereBadge('var(--accent)') : '')
       +   '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">about_me</div>'
       +   '<div style="display:flex;gap:clamp(20px,4vw,34px);align-items:flex-start;flex-wrap:wrap;">'
       +     '<div style="flex:1;min-width:230px;">'
@@ -407,7 +391,7 @@
 
     if (v.has('fork1')) html += '<div>'+connector('var(--accent)')
       + '<div id="n-fork1" style="position:relative;background:linear-gradient(#fff,#fdfcf9);border:1.5px solid #ecd9bd;border-radius:24px;padding:clamp(24px,4vw,36px);box-shadow:0 6px 26px -16px rgba(200,134,42,.4);text-align:center;'+anim('fork1')+'">'
-      +   '<div style="display:inline-grid;place-items:center;width:78px;height:78px;margin-bottom:6px;"><div style="position:absolute;width:56px;height:56px;border:2px solid var(--decision);border-radius:9px;transform:rotate(45deg);background:#fff;"></div><span style="position:relative;font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:var(--decision);">choose</span></div>'
+      +   '<div style="position:relative;display:inline-grid;place-items:center;width:78px;height:78px;margin:0 auto 6px;"><div style="position:absolute;top:50%;left:50%;width:56px;height:56px;transform:translate(-50%,-50%) rotate(45deg);border:2px solid var(--decision);border-radius:9px;background:#fff;"></div><span style="position:relative;font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:var(--decision);">choose</span></div>'
       +   '<div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:clamp(19px,3.6vw,22px);margin:2px 0 20px;">Two paths.</div>'
       +   '<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">'
       +     '<button class="btn-dark" data-nav="work">Show me your work <span style="font-family:\'IBM Plex Mono\',monospace;">→</span></button>'
@@ -419,7 +403,6 @@
       var speedDoneNow = !state.timing && state.timer===0;
       html += '<div>'+connector('var(--decision)')
         + '<div id="n-speed" style="position:relative;background:#fff;border:1.5px solid #E4E2D8;border-radius:24px;padding:clamp(24px,4.4vw,38px);box-shadow:0 6px 26px -16px rgba(20,20,32,.32);'+anim('speed')+'">'
-        +   (state.current==='speed' ? hereBadge('var(--accent)') : '')
         +   '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px;">'
         +     '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6B6B73;line-height:1.5;max-width:70%;">Sona Manakova · Head of Customer Contract Management, Benelux</div>'
         +     '<div data-timer-str style="font-family:\'IBM Plex Mono\',monospace;font-weight:500;font-size:clamp(26px,5vw,34px);color:var(--accent);flex:none;line-height:1;">0:'+(state.timer<10?'0'+state.timer:state.timer)+'</div>'
@@ -455,18 +438,17 @@
 
     if (v.has('fork2')) html += '<div>'+connector('var(--accent)')
       + '<div id="n-fork2" style="position:relative;background:linear-gradient(#fff,#fdfcf9);border:1.5px solid #ecd9bd;border-radius:24px;padding:clamp(24px,4vw,36px);box-shadow:0 6px 26px -16px rgba(200,134,42,.4);text-align:center;'+anim('fork2')+'">'
-      +   '<div style="display:inline-grid;place-items:center;width:78px;height:78px;margin-bottom:6px;"><div style="position:absolute;width:56px;height:56px;border:2px solid var(--decision);border-radius:9px;transform:rotate(45deg);background:#fff;"></div><span style="position:relative;font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:var(--decision);">choose</span></div>'
+      +   '<div style="position:relative;display:inline-grid;place-items:center;width:78px;height:78px;margin:0 auto 6px;"><div style="position:absolute;top:50%;left:50%;width:56px;height:56px;transform:translate(-50%,-50%) rotate(45deg);border:2px solid var(--decision);border-radius:9px;background:#fff;"></div><span style="position:relative;font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:var(--decision);">choose</span></div>'
       +   '<div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:clamp(19px,3.6vw,22px);margin:2px 0 20px;">Where to?</div>'
       +   '<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">'
       +     '<button class="btn-dark" data-nav="contact">Let\'s talk <span style="font-family:\'IBM Plex Mono\',monospace;">→</span></button>'
-      +     '<button class="btn-outline" data-nav="know">Get to know me</button>'
+      +     '<button class="btn-outline" data-nav="know">Get to know me better</button>'
       +     '<button class="btn-outline" data-nav="faq">FAQ</button>'
       +   '</div>'
       + '</div></div>';
 
     if (v.has('know')) html += '<div>'+connector('var(--accent)')
       + '<div id="n-know" style="position:relative;background:#fff;border:1.5px solid #E4E2D8;border-radius:24px;padding:clamp(26px,4.4vw,40px);box-shadow:0 6px 26px -16px rgba(20,20,32,.32);'+anim('know')+'">'
-      +   (state.current==='know' ? hereBadge('var(--accent)') : '')
       +   '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">get_to_know_me</div>'
       +   '<h2 style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:clamp(22px,4.2vw,28px);margin:0 0 24px;letter-spacing:-.015em;">A bit more, off the main path.</h2>'
       +   '<div style="margin-bottom:24px;">'
@@ -476,9 +458,9 @@
       +   '<div style="margin-bottom:28px;">'
       +     '<h3 style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:18px;margin:0 0 10px;">Outside work</h3>'
       +     '<ul style="margin:0;padding-left:18px;font-size:15px;line-height:1.65;color:#3a3a44;">'
-      +       '<li style="margin-bottom:7px;"><strong style="color:#17171C;">Freetree Society</strong> — I volunteer planting trees and helping with reforestation.</li>'
-      +       '<li style="margin-bottom:7px;"><strong style="color:#17171C;">Arduino projects</strong> — I build small electronics projects in my spare time, mostly to keep my hands on how things actually work.</li>'
-      +       '<li><strong style="color:#17171C;">Claude Code projects</strong> — like this one.</li>'
+      +       '<li style="margin-bottom:7px;"><strong style="color:#17171C;">Freetree Society:</strong> I volunteer planting trees and helping with reforestation.</li>'
+      +       '<li style="margin-bottom:7px;"><strong style="color:#17171C;">Arduino projects:</strong> I build small electronics projects in my spare time, mostly to keep my hands on how things actually work.</li>'
+      +       '<li><strong style="color:#17171C;">Claude Code projects:</strong> like this one.</li>'
       +     '</ul>'
       +   '</div>'
       +   '<button class="btn-dark" data-nav="contact">Let\'s talk <span style="font-family:\'IBM Plex Mono\',monospace;">→</span></button>'
@@ -486,25 +468,24 @@
 
     if (v.has('faq')) html += '<div>'+connector('var(--accent)')
       + '<div id="n-faq" style="position:relative;background:#fff;border:1.5px solid #E4E2D8;border-radius:24px;padding:clamp(26px,4.4vw,40px);box-shadow:0 6px 26px -16px rgba(20,20,32,.32);'+anim('faq')+'">'
-      +   (state.current==='faq' ? hereBadge('var(--accent)') : '')
       +   '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;">faq · a chain of whys</div>'
       +   '<div style="display:grid;gap:14px;margin-bottom:28px;">'
-      +     '<div style="border-left:2px solid var(--accent);padding-left:16px;"><div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px;margin-bottom:3px;">Why should we talk?</div><p style="margin:0;font-size:14.5px;line-height:1.55;color:#3a3a44;">Because I make operations run better — and I make the improvement actually stick.</p></div>'
+      +     '<div style="border-left:2px solid var(--accent);padding-left:16px;"><div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px;margin-bottom:3px;">Why should we talk?</div><p style="margin:0;font-size:14.5px;line-height:1.55;color:#3a3a44;">Because I make operations run better, and I make the improvement actually stick.</p></div>'
       +     '<div style="border-left:2px solid var(--accent);padding-left:16px;"><div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px;margin-bottom:3px;">Why can I do that?</div><p style="margin:0;font-size:14.5px;line-height:1.55;color:#3a3a44;">Because I\'ve done it at three levels: in the data, in the processes, and leading the people.</p></div>'
       +     '<div style="border-left:2px solid var(--accent);padding-left:16px;"><div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px;margin-bottom:3px;">Why does the combination work?</div><p style="margin:0;font-size:14.5px;line-height:1.55;color:#3a3a44;">Because each level taught me to look at the same problem from a different height.</p></div>'
       +     '<div style="border-left:2px solid var(--accent);padding-left:16px;"><div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px;margin-bottom:3px;">Why does it matter?</div><p style="margin:0;font-size:14.5px;line-height:1.55;color:#3a3a44;">Because the strategy I trust is the kind built from the ground up, on how things actually run.</p></div>'
-      +     '<div style="border-left:2px solid var(--decision);padding-left:16px;"><div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px;margin-bottom:3px;">So why do I do it?</div><p style="margin:0;font-size:14.5px;line-height:1.55;color:#3a3a44;">Because I like owning something end to end — and seeing it actually work.</p></div>'
+      +     '<div style="border-left:2px solid var(--decision);padding-left:16px;"><div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px;margin-bottom:3px;">So why do I do it?</div><p style="margin:0;font-size:14.5px;line-height:1.55;color:#3a3a44;">Because I like owning something end to end and seeing it actually work.</p></div>'
       +   '</div>'
       +   '<button class="btn-dark" data-nav="contact">Let\'s talk <span style="font-family:\'IBM Plex Mono\',monospace;">→</span></button>'
       + '</div></div>';
 
     if (v.has('contact')) html += '<div>'+connector('var(--accent)')
       + '<div id="n-contact" style="position:relative;background:#17171C;color:#fff;border-radius:28px;padding:clamp(28px,5vw,46px);box-shadow:0 30px 70px -34px rgba(20,20,32,.6);'+anim('contact')+'">'
-      +   (state.current==='contact' ? '<span style="position:absolute;top:18px;right:20px;font-family:\'IBM Plex Mono\',monospace;font-size:10px;letter-spacing:.06em;color:#9aa0ff;display:inline-flex;align-items:center;gap:6px;"><span style="width:7px;height:7px;border-radius:50%;background:#9aa0ff;animation:hereGlow 1.8s ease-in-out infinite;"></span>YOU ARE HERE</span>' : '')
       +   '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#9aa0ff;margin-bottom:18px;">process.end()</div>'
       +   '<h2 style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:clamp(30px,6vw,42px);margin:0 0 18px;letter-spacing:-.02em;">Let\'s talk.</h2>'
-      +   '<p style="margin:0 0 24px;font-size:clamp(15px,2.7vw,17px);line-height:1.6;color:#cfceda;max-width:56ch;text-wrap:pretty;">If you\'ve read this far, we probably see things in a similar way. I\'m at my best when I get to own something properly — the whole way from the data, to the process, to the people involved.</p>'
-      +   '<p style="margin:0 0 26px;font-size:14px;line-height:1.6;color:#a7a6b4;max-width:56ch;text-wrap:pretty;">Based in the Netherlands, open to relocation — I\'ve done the Slovakia → Malaysia → Netherlands move already, so I know what it takes. I\'m after an international team and work close to the core of the business, ideally with a mission I believe in.</p>'
+      +   '<p style="margin:0 0 18px;font-size:clamp(15px,2.7vw,17px);line-height:1.6;color:#cfceda;max-width:56ch;text-wrap:pretty;">If you\'ve read this far, we probably see things in a similar way.</p>'
+      +   '<p style="margin:0 0 18px;font-size:clamp(15px,2.7vw,17px);line-height:1.6;color:#cfceda;max-width:56ch;text-wrap:pretty;">I\'m at my best when I own something end to end. I\'m looking for a role close to the core of the business, where I can deliver tangible results, and keep learning through new problems and modern tools.</p>'
+      +   '<p style="margin:0 0 26px;font-size:14px;line-height:1.6;color:#a7a6b4;max-width:56ch;text-wrap:pretty;">Based in the Netherlands and open to relocation. I\'ve moved internationally more than once and I\'m happy to do it again.</p>'
       +   '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9aa0ff;margin-bottom:10px;">roles I\'m open to</div>'
       +   '<ul style="margin:0 0 8px;padding-left:18px;font-size:15px;line-height:1.65;color:#e7e6ee;">'
       +     '<li>Continuous Improvement / Operational Excellence</li>'
@@ -526,7 +507,7 @@
 
   function renderMinimapDock(){
     var dock = document.getElementById('minimap-dock');
-    if (!state.wide || state.mapOpen){ dock.innerHTML = ''; return; }
+    if (!state.wide){ dock.innerHTML = ''; return; }
     var W=138, H=214, px=14, py=14;
     var visited = state.visited, front = frontier();
     var pos = {};
@@ -550,182 +531,12 @@
     dock.innerHTML = '<div style="position:fixed;left:18px;bottom:18px;z-index:190;width:162px;background:rgba(255,255,255,.82);backdrop-filter:blur(8px);border:1px solid #E0DED4;border-radius:16px;padding:11px 11px 8px;box-shadow:0 12px 34px -18px rgba(20,20,32,.4);">'
       + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px;">'
       +   '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9a988e;">Process map</span>'
-      +   '<button data-action="open-map" style="border:none;background:transparent;cursor:pointer;font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:var(--accent);padding:0;">expand ⤢</button>'
       + '</div>'
       + '<svg width="100%" viewBox="0 0 '+W+' '+H+'" style="display:block;overflow:visible;">'
       +   '<defs><marker id="mm-ar" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L5,3 L0,6 Z" fill="#c2c0b6"/></marker></defs>'
       +   '<g>'+lines+'</g><g>'+shapes+'</g>'
       + '</svg>'
       + '</div>';
-  }
-
-  // ---------- fullscreen map overlay (draggable, physics) ----------
-
-  var overlayRaf = null;
-  var phys = {};
-  var nodeEls = {};
-  var lineRecs = {};
-  var dragState = null;
-  var svgNS = 'http://www.w3.org/2000/svg';
-
-  function openMapOverlay(){
-    state.mapOpen = true;
-    renderMinimapDock();
-    buildOverlay();
-    window.addEventListener('pointermove', onPtrMove);
-    window.addEventListener('pointerup', onPtrUp);
-    overlayRaf = requestAnimationFrame(tickOverlay);
-  }
-
-  function closeMapOverlay(){
-    cancelAnimationFrame(overlayRaf);
-    window.removeEventListener('pointermove', onPtrMove);
-    window.removeEventListener('pointerup', onPtrUp);
-    document.getElementById('map-overlay-root').innerHTML = '';
-    var wasOpen = state.mapOpen;
-    state.mapOpen = false;
-    if (wasOpen) renderMinimapDock();
-  }
-
-  function buildOverlay(){
-    var root = document.getElementById('map-overlay-root');
-    root.innerHTML = '';
-    var W = window.innerWidth, H = window.innerHeight;
-    var px = Math.max(70, W*0.13), pyTop = 128, pyBot = 96;
-    phys = {};
-    order.forEach(function(id){
-      var n = nodes[id];
-      var ax = px + (n.x-bounds.minX)/(bounds.maxX-bounds.minX)*(W-2*px);
-      var ay = pyTop + (n.y-bounds.minY)/(bounds.maxY-bounds.minY)*(H-pyTop-pyBot);
-      phys[id] = {x:ax,y:ay,vx:0,vy:0,ax:ax,ay:ay};
-    });
-    nodeEls = {}; lineRecs = {};
-
-    var overlay = document.createElement('div');
-    overlay.style.cssText = 'position:fixed;inset:0;z-index:500;background:rgba(244,243,238,.95);backdrop-filter:blur(6px);overflow:hidden;background-image:radial-gradient(#dedccf 1.3px, transparent 1.3px);background-size:44px 44px;';
-
-    var header = document.createElement('div');
-    header.style.cssText = 'position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px clamp(16px,4vw,28px);z-index:4;';
-    header.innerHTML = '<div>'
-      + '<div style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em;">The whole process</div>'
-      + '<div style="font-family:\'IBM Plex Mono\',monospace;font-size:11.5px;color:#9a988e;margin-top:2px;">drag a node to nudge it · tap to jump there</div>'
-      + '</div>'
-      + '<button data-action="close-map" style="display:inline-flex;align-items:center;gap:7px;padding:10px 17px;border-radius:999px;border:1.5px solid #17171C;background:#fff;color:#17171C;font-family:\'IBM Plex Sans\',sans-serif;font-size:14px;font-weight:500;cursor:pointer;">Close ✕</button>';
-    overlay.appendChild(header);
-
-    var svg = document.createElementNS(svgNS,'svg');
-    svg.setAttribute('style','position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;');
-    var defs = document.createElementNS(svgNS,'defs');
-    defs.innerHTML = '<marker id="ov-ar" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b9b7ad"/></marker>';
-    svg.appendChild(defs);
-    var gLines = document.createElementNS(svgNS,'g');
-    var gLabels = document.createElementNS(svgNS,'g');
-    var visited = state.visited;
-    edges.forEach(function(e){
-      var a=e[0], b=e[1], on = visited.has(a) && visited.has(b);
-      var line = document.createElementNS(svgNS,'line');
-      line.setAttribute('stroke', on?'var(--accent)':'#cbc9bf');
-      line.setAttribute('stroke-width', on?2:1.4);
-      line.setAttribute('opacity', on?.85:.55);
-      line.setAttribute('marker-end','url(#ov-ar)');
-      gLines.appendChild(line);
-      var rec = {el:line, a:a, b:b};
-      lineRecs[a+'>'+b] = rec;
-      var lt = edgeLabels[a+'>'+b];
-      if (lt){
-        var text = document.createElementNS(svgNS,'text');
-        text.setAttribute('text-anchor','middle');
-        text.setAttribute('style',"font-family:'IBM Plex Mono',monospace;font-size:11px;fill:#9a988e;");
-        text.textContent = lt;
-        gLabels.appendChild(text);
-        rec.labelEl = text;
-      }
-    });
-    svg.appendChild(gLines); svg.appendChild(gLabels);
-    overlay.appendChild(svg);
-
-    var front = frontier();
-    order.forEach(function(id){
-      var t = nodes[id].type;
-      var vis = visited.has(id), fr = front.has(id), cur = state.current===id, reach = vis||fr;
-      var label = labels[id];
-      var el = document.createElement('div');
-      el.style.position='absolute'; el.style.left='0'; el.style.top='0';
-      if (t==='decision'){
-        el.style.cssText += 'transform:translate(-50%,-50%);width:104px;height:104px;display:grid;place-items:center;cursor:'+(reach?'grab':'default')+';touch-action:none;user-select:none;opacity:'+(reach?1:.5)+';';
-        el.innerHTML = '<div style="position:absolute;left:50%;top:50%;width:70px;height:70px;transform:translate(-50%,-50%) rotate(45deg);background:'+(cur?'var(--accent)':'#fff')+';border:1.5px solid '+(cur?'var(--accent)':fr?'var(--decision)':'#17171C')+';border-radius:8px;box-shadow:'+(cur?'0 12px 30px -12px rgba(61,74,222,.6)':'0 8px 22px -14px rgba(20,20,32,.4)')+';"></div>'
-          + '<span style="position:relative;font-family:\'IBM Plex Mono\',monospace;font-size:12px;font-weight:500;color:'+(cur?'#fff':fr?'var(--decision)':'#17171C')+';">'+label+'</span>';
-      } else {
-        var isTerm = t==='term';
-        el.style.cssText += 'transform:translate(-50%,-50%);cursor:'+(reach?'grab':'default')+';touch-action:none;user-select:none;display:inline-flex;align-items:center;gap:8px;padding:'+(isTerm?'12px 20px':'11px 17px')+';border-radius:'+(isTerm?'999px':'9px')+';white-space:nowrap;background:'+(cur?'var(--accent)':'#fff')+';color:'+(cur?'#fff':reach?'#17171C':'#b7b5aa')+';border:1.5px solid '+(cur?'var(--accent)':vis?'#17171C':fr?'var(--decision)':'#e0ded4')+';box-shadow:'+(cur?'0 12px 30px -12px rgba(61,74,222,.6)':reach?'0 8px 22px -14px rgba(20,20,32,.4)':'none')+';opacity:'+(reach?1:.5)+';';
-        el.innerHTML = '<span style="width:8px;height:8px;border-radius:50%;flex:none;background:'+(cur?'#fff':fr?'var(--decision)':'var(--accent)')+';"></span><span style="font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:14px;letter-spacing:-.01em;">'+label+'</span>';
-      }
-      if (reach) el.addEventListener('pointerdown', function(ev){ onPtrDown(ev,id); });
-      overlay.appendChild(el);
-      nodeEls[id] = el;
-    });
-
-    var legend = document.createElement('div');
-    legend.style.cssText = 'position:absolute;left:clamp(16px,4vw,28px);bottom:18px;z-index:3;display:flex;gap:16px;flex-wrap:wrap;align-items:center;background:rgba(255,255,255,.8);backdrop-filter:blur(6px);border:1px solid #E0DED4;border-radius:12px;padding:9px 14px;';
-    legend.innerHTML = '<span style="font-family:\'IBM Plex Mono\',monospace;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:#9a988e;">legend</span>'
-      + '<span style="display:inline-flex;align-items:center;gap:7px;font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:#3a3a44;"><span style="width:20px;height:11px;border-radius:99px;border:1.5px solid #17171C;display:inline-block;"></span>start / end</span>'
-      + '<span style="display:inline-flex;align-items:center;gap:7px;font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:#3a3a44;"><span style="width:18px;height:12px;border-radius:2px;border:1.5px solid #17171C;display:inline-block;"></span>step</span>'
-      + '<span style="display:inline-flex;align-items:center;gap:7px;font-family:\'IBM Plex Mono\',monospace;font-size:11px;color:#3a3a44;"><span style="width:13px;height:13px;border:1.5px solid var(--decision);border-radius:2px;display:inline-block;transform:rotate(45deg);"></span>decision</span>';
-    overlay.appendChild(legend);
-
-    root.appendChild(overlay);
-    positionOverlayNodes();
-  }
-
-  function positionOverlayNodes(){
-    for (var id in phys){
-      var p = phys[id], el = nodeEls[id];
-      if (el){ el.style.left = p.x+'px'; el.style.top = p.y+'px'; }
-    }
-    for (var key in lineRecs){
-      var rec = lineRecs[key];
-      var a = phys[rec.a], b = phys[rec.b];
-      rec.el.setAttribute('x1',a.x); rec.el.setAttribute('y1',a.y);
-      rec.el.setAttribute('x2',b.x); rec.el.setAttribute('y2',b.y);
-      if (rec.labelEl){ rec.labelEl.setAttribute('x',(a.x+b.x)/2); rec.labelEl.setAttribute('y',(a.y+b.y)/2-4); }
-    }
-  }
-
-  function tickOverlay(){
-    if (!state.mapOpen) return;
-    for (var id in phys){
-      var p = phys[id];
-      if (!dragState || dragState.id !== id){
-        p.vx += (p.ax-p.x)*0.055; p.vy += (p.ay-p.y)*0.055;
-        p.vx *= 0.9; p.vy *= 0.9; p.x += p.vx; p.y += p.vy;
-      }
-    }
-    positionOverlayNodes();
-    overlayRaf = requestAnimationFrame(tickOverlay);
-  }
-
-  function onPtrDown(e,id){
-    e.preventDefault();
-    dragState = {id:id, moved:0, lx:e.clientX, ly:e.clientY};
-    var p = phys[id]; p.vx=0; p.vy=0;
-    var el = nodeEls[id]; if (el) el.style.cursor='grabbing';
-  }
-  function onPtrMove(e){
-    if (!dragState) return;
-    var dx = e.clientX-dragState.lx, dy = e.clientY-dragState.ly;
-    dragState.lx = e.clientX; dragState.ly = e.clientY;
-    dragState.moved += Math.abs(dx)+Math.abs(dy);
-    var p = phys[dragState.id];
-    p.x += dx; p.y += dy; p.vx = dx; p.vy = dy;
-  }
-  function onPtrUp(){
-    if (!dragState) return;
-    var d = dragState;
-    var el = nodeEls[d.id]; if (el) el.style.cursor='grab';
-    if (d.moved < 6 && isReachable(d.id)){
-      var id = d.id; dragState = null; navigate(id); return;
-    }
-    dragState = null;
   }
 
   // ---------- event delegation ----------
@@ -736,9 +547,7 @@
     var act = e.target.closest('[data-action]');
     if (act){
       var a = act.getAttribute('data-action');
-      if (a === 'open-map') openMapOverlay();
-      else if (a === 'close-map') closeMapOverlay();
-      else if (a === 'email') window.location.href = 'mailto:'+EMAIL;
+      if (a === 'email') window.location.href = 'mailto:'+EMAIL;
       return;
     }
     var scrollTo = e.target.closest('[data-scrollto]');
